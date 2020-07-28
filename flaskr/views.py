@@ -14,6 +14,8 @@ from flaskr import db
 from flaskr.models import Entry
 from flaskr.models import User
 
+from functools import wraps
+
 
 def login_required(f):
     @wraps(f)
